@@ -1,5 +1,10 @@
+import = [ "C:/Users/Garrick/AppData/Roaming/alacritty/nord.toml" ]
+
 [shell]
 program = "C:/Users/Garrick/AppData/Local/Microsoft/WindowsApps/Microsoft.PowerShell_8wekyb3d8bbwe/pwsh.exe"
+
+[colors]
+draw_bold_text_with_bright_colors = true
 
 [env]
 TERM = "xterm-256color"
@@ -10,40 +15,129 @@ style = "Block"
 [font]
 size = 12.0
 
+[font.bold]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Italic"
+
 [font.normal]
-family = "Consolas NF"
+family = "JetBrainsMono Nerd Font Mono"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 1
+
+[scrolling]
+history = 5000
 
 [window]
 startup_mode = "Windowed"
-dynamic_padding = true
-opacity = 0.9
-blur = true
+dynamic_padding = false
+opacity = 0.92
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
 
 [window.padding]
 x = 6
-y = 0
+y = 6
 
 #[window.dimensions]
 #columns = 90
 #lines = 25
 
-[colors.normal]
-black = "#21222c"
-red = "#ff5555"
-green = "#50fa7b"
-yellow = "#f1fa8c"
-blue = "#bd93f9"
-magenta = "#ff79c6"
-cyan = "#8be9fd"
-white = "#f8f8f2"
-
-[colors.primary]
-background = "#282a36"
-foreground = "#f8f8f2"
-
-[colors.cursor]
-text = "CellBackground"
-cursor = "CellForeground"
-
-
 # working_directory = "D:/garrickedd/project"
+
+# [[keyboard.bindings]]
+# action = "Paste"
+# key = "V"
+# mods = "Control|Shift"
+
+# [[keyboard.bindings]]
+# action = "Copy"
+# key = "C"
+# mods = "Control|Shift"
+
+# [[keyboard.bindings]]
+# action = "PasteSelection"
+# key = "Insert"
+# mods = "Shift"
+
+# [[keyboard.bindings]]
+# action = "ResetFontSize"
+# key = "Key0"
+# mods = "Control"
+
+# [[keyboard.bindings]]
+# action = "IncreaseFontSize"
+# key = "Equals"
+# mods = "Control"
+
+# [[keyboard.bindings]]
+# action = "IncreaseFontSize"
+# key = "Plus"
+# mods = "Control"
+
+# [[keyboard.bindings]]
+# action = "DecreaseFontSize"
+# key = "Minus"
+# mods = "Control"
+
+# [[keyboard.bindings]]
+# action = "ToggleFullscreen"
+# key = "F11"
+# mods = "None"
+
+# [[keyboard.bindings]]
+# action = "Paste"
+# key = "Paste"
+# mods = "None"
+
+# [[keyboard.bindings]]
+# action = "Copy"
+# key = "Copy"
+# mods = "None"
+
+# [[keyboard.bindings]]
+# action = "ClearLogNotice"
+# key = "L"
+# mods = "Control"
+
+# [[keyboard.bindings]]
+# chars = "\f"
+# key = "L"
+# mods = "Control"
+
+# [[keyboard.bindings]]
+# action = "ScrollPageUp"
+# key = "PageUp"
+# mode = "~Alt"
+# mods = "None"
+
+# [[keyboard.bindings]]
+# action = "ScrollPageDown"
+# key = "PageDown"
+# mode = "~Alt"
+# mods = "None"
+
+# [[keyboard.bindings]]
+# action = "ScrollToTop"
+# key = "Home"
+# mode = "~Alt"
+# mods = "Shift"
+
+# [[keyboard.bindings]]
+# action = "ScrollToBottom"
+# key = "End"
+# mode = "~Alt"
+# mods = "Shift"
